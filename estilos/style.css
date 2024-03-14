@@ -24,3 +24,92 @@
     padding: 0;
 }
 
+/* HEADER */
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+}
+
+header > nav > ul > li {
+    padding: 8px 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header > nav > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Foto */
+.foto-port {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 7px;
+}
+
+/* Texto de Apresentação */
+.apresentacao {
+    width: 90%;
+    margin: auto;
+}
+
+.apresentacao p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.apresentacao p:first-child {
+    text-indent: 30px;
+}
+
+.apresentacao p:last-child, .apresentacao p:nth-of-type(2) {
+    text-indent: 20px;
+    margin-bottom: 5px;
+}
+
+.apresentacao h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Links para Redes Sociais */
+.container-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 7px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.568);
+    border-radius: 4px;
+    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.438);
+    width: 140px;
+}
+
+.redes-sociais:hover {
+    border: 2px solid black;
+    font-weight: bold;
+    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.699);
+}
+
+.redes-sociais > img {
+    width: 30%;
+}
+
+.redes-sociais > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 1.3em;
+}
