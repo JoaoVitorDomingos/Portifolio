@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --fonte-principal: "Roboto", "Lato", "Open Sans", sans-serif;
+
+    /* Paleta Principal */
+    --azul-background-claro: #D9ECFF;
+    --azul-background: #A6D2FF;
+    --azul-escuro: #074B8F;
+    --azul: #6EB1F5;
+    --azul-cinza: #17395C;
+
+    /* Paleta Secundária */
+    --misty-rose: #f9e0d9ff;
+    --space-cadet: #251f47ff;
+    --cerulean: #0b7189ff;
+    --sky-blue: #72ddf7ff;
+    --light-sky-blue: #7fc8f8ff;
+}
+
+*{
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
+
