@@ -113,3 +113,73 @@ header > nav > ul > li > a {
     margin-left: 10px;
     font-size: 1.3em;
 }
+
+
+/* Projetos */
+.projetos > h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 70px 0px 40px 0px;
+}
+
+.projetos > .projeto > h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.projetos > .projeto > p {
+    font-size: 1.2em;
+    margin: 0px 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.projetos > .projeto > div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.projetos > .projeto > div > a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.438)
+}
+
+.projetos > .projeto > div > a:hover {
+    font-weight: bold;
+    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.699);
+    border: 1px solid black;
+}
+
+/* Contatos */
+.contatos {
+    margin: 60px 0px;
+}
+
+.contatos > h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Rodapé */
+footer {
+    padding: 30px;
+    text-align: left;
+    font-size: 1.1em;
+    color: white;
+    background-color: gray;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
