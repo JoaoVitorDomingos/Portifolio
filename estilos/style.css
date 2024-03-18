@@ -8,7 +8,8 @@
     --azul-background: #A6D2FF;
     --azul-escuro: #074B8F;
     --azul: #6EB1F5;
-    --azul-cinza: #17395C;
+    --azul-cinza: #173a5c;
+    --azul-cinza-opacidade: #173a5c85;
 
     /* Paleta Secundária */
     --misty-rose: #f9e0d9ff;
@@ -24,23 +25,32 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--azul-background-claro);
+}
+
 /* HEADER */
+header > nav {
+    display: none;
+}
+
 header > nav > ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     font-size: 1.4em;
+    background-color: var(--azul-cinza);
 }
 
 header > nav > ul > li {
     padding: 8px 0px;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--azul-background-claro);
 }
 
 header > nav > ul > li > a {
-    color: black;
+    color: var(--azul-background-claro);
     text-decoration: none;
 }
 
@@ -50,6 +60,7 @@ header > nav > ul > li > a {
     margin: 30px auto;
     width: 80%;
     border-radius: 7px;
+    box-shadow: 3px 3px 1px var(--azul-cinza-opacidade);
 }
 
 /* Texto de Apresentação */
@@ -91,16 +102,18 @@ header > nav > ul > li > a {
     justify-content: center;
     margin: 10px 0px;
     padding: 7px 0px;
-    border: 2px solid rgba(0, 0, 0, 0.568);
+    border: 2px solid var(--azul-cinza);
     border-radius: 4px;
-    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.438);
+    box-shadow: 2px 2px 5px 0px var(--azul-cinza-opacidade);
     width: 140px;
+    background-color: var(--azul-background);
 }
 
 .redes-sociais:hover {
-    border: 2px solid black;
+    border: 2px solid var(--azul-cinza);
     font-weight: bold;
-    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.699);
+    box-shadow: 4px 2px 3px 1px var(--azul-cinza);
+    background-color: var(--azul);
 }
 
 .redes-sociais > img {
@@ -145,15 +158,17 @@ header > nav > ul > li > a {
     text-decoration: none;
     color: black;
     padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.438);
+    border: 1px solid var(--azul-cinza-opacidade);
     border-radius: 5px;
-    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.438)
+    box-shadow: 2px 2px 5px 0px var(--azul-cinza-opacidade);
+    background-color: var(--azul-background);
 }
 
 .projetos > .projeto > div > a:hover {
     font-weight: bold;
-    box-shadow: 4px 2px 1px 1px rgba(0, 0, 0, 0.699);
-    border: 1px solid black;
+    box-shadow: 4px 2px 3px 1px var(--azul-cinza);
+    border: 2px solid var(--azul-cinza);
+    background-color: var(--azul);
 }
 
 /* Contatos */
@@ -172,7 +187,7 @@ footer {
     text-align: left;
     font-size: 1.1em;
     color: white;
-    background-color: gray;
+    background-color: var(--azul-cinza);
 }
 
 footer a {
