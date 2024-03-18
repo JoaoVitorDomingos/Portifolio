@@ -1,0 +1,140 @@
+:root {
+    --fonte-principal: "Roboto", "Lato", "Open Sans", sans-serif;
+
+    /* Paleta Principal */
+    --azul-background-claro: #D9ECFF;
+    --azul-background: #A6D2FF;
+    --azul-escuro: #074B8F;
+    --azul: #6EB1F5;
+    --azul-cinza: #173a5c;
+    --azul-cinza-opacidade: #173a5c85;
+
+    /* Paleta Secundária */
+    --misty-rose: #f9e0d9ff;
+    --space-cadet: #251f47ff;
+    --cerulean: #0b7189ff;
+    --sky-blue: #72ddf7ff;
+    --light-sky-blue: #7fc8f8ff;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    /* Cabeçalho */
+    header {
+        padding: 20px;
+        background-color: var(--azul-cinza);
+    }
+    
+    header > #icone-menu {
+        display: none;
+    }
+
+    header > nav#menuNavegacao > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header > nav > ul > li {
+        border: none;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 1.2em;
+    }
+
+    header > nav > ul > li > a:hover {
+        font-weight: bold;
+        text-decoration: underline;
+        color: var(--azul-background);
+    }
+
+    /* Section Apresentação */
+    section#sobre_mim > img {
+        width: 30%;
+    }
+
+    section#sobre_mim > div.apresentacao > h1 {
+        font-size: 4em;
+    }
+
+    section#sobre_mim > div.apresentacao > p {
+        font-size: 1.7em;
+    }
+
+    section#sobre_mim > div.apresentacao > p:first-child {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .container-redes-sociais {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .container-redes-sociais > div.redes-sociais {
+        width: 177px;
+    }
+
+    /* Projetos */
+    section#projetos > h1 {
+        font-size: 3.5em;
+    }
+
+    .projetos > .projeto > picture > img {
+        width: 90%;
+    }
+
+    section#projetos > div.projeto > h2 {
+        font-size: 2.3em;
+    }
+
+    section#projetos > div.projeto > p {
+        font-size: 1.4em;
+        margin: 30px;
+    }
+
+    section#projetos > div.projeto > div {
+        width: 80%;
+        margin: 10px auto 50px auto;
+    }
+
+    .projetos > .projeto > div > a {
+        padding: 15px 30px 15px 30px;
+        font-size: 1.4em;
+    }
+
+    /* Contatos */
+    section#contatos {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    section#contatos > h1 {
+        font-size: 3.5em;
+    }
+
+    section#contatos > div.container-redes-sociais {
+        flex-direction: column;
+        margin: 0;
+        width: 30%;
+    }
+
+    section#contatos > div.container-redes-sociais > div.redes-sociais:first-child {
+        margin-bottom: 30px;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 40px
+    }
+
+    footer > p {
+        font-size: 1.3em;
+    }
+}

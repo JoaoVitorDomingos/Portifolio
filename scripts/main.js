@@ -1,15 +1,18 @@
+let icone_menu = document.getElementById("icone-menu")
+let menu_nav = document.getElementById("menuNavegacao")
+
 function AparecerMenu() {
     if (menuNavegacao.style.display == "block") {
-        menuNavegacao.style.display = "none"
+        menu_nav.style.display = "none"
     } else {
-        menuNavegacao.style.display = "block"
+        menu_nav.style.display = "block"
     } 
 }
 
 function mudouTamanho() {
     if (window.innerWidth >= 768) {
-        menuNavegacao.style.display = "block"
+        menu_nav.style.display = "block"
     } else {
-        menuNavegacao.style.display = "none"
+        menu_nav.style.display = "none"
     }
 }

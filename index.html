@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
 </head>
-<body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()" onload="mudouTamanho()">
     <header>
         <span id="icone-menu" class="material-symbols-outlined" onclick="AparecerMenu()">menu</span>
         <nav id="menuNavegacao">
@@ -49,7 +50,7 @@
 
             <div class="projeto">
                 <picture>
-                    <source media="(max-width: 758px)" srcset="imgs/projetos-my-class/projeto-my-class-celular.png" type="image/png" class="imagem-projeto-celular">
+                    <source media="(max-width: 768px)" srcset="imgs/projetos-my-class/projeto-my-class-celular.png" type="image/png" class="imagem-projeto-celular">
                     <img src="imgs/projetos-my-class/projeto-my-class.png" alt="Projeto My Class">
                 </picture>
                 <h2>My Class</h2>
@@ -63,8 +64,8 @@
 
             <div class="projeto">
                 <picture>
-                    <source media="(max-width: 758px)" srcset="imgs/projetos-luis-cartoes/projeto-luis-cartoes-celular.png" type="image/png" class="imagem-projeto-celular" id="teste">
-                    <img src="imgs/projeto-luis-cartoes.png" alt="Projeto Luis Cartões">
+                    <source media="(max-width: 768px)" srcset="imgs/projetos-luis-cartoes/projeto-luis-cartoes-celular.png" type="image/png" class="imagem-projeto-celular" id="teste">
+                    <img src="imgs/projetos-luis-cartoes/projeto-luis-cartoes.png" alt="Projeto Luis Cartões">
                 </picture>
                 <h2>Luis Cartões</h2>
                 <p>Este projeto coloquei em prática meus estudos sobre HTML5 e CSS3. É um site onde mostra o serviçõ de fazer cartões festivos de uma pessoa. Há uma área de comentários e também uma de contatos.</p>
