@@ -54,15 +54,15 @@
         width: 30%;
     }
 
-    section#sobre_mim > div.apresentacao > h1 {
+    section#sobre_mim > div > div.apresentacao > h1 {
         font-size: 4em;
     }
 
-    section#sobre_mim > div.apresentacao > p {
+    section#sobre_mim > div > div.apresentacao > p {
         font-size: 1.7em;
     }
 
-    section#sobre_mim > div.apresentacao > p:first-child {
+    section#sobre_mim > div > div.apresentacao > p:first-child {
         text-align: center;
         font-size: 2em;
     }
@@ -136,5 +136,119 @@
 
     footer > p {
         font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Section Sobre mim */
+    section#sobre_mim {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 150px auto 150px auto;
+        max-width: 70%;
+    }
+
+    section#sobre_mim > img {
+        width: 20%;
+        margin: 0;
+    }
+
+    section#sobre_mim > div {
+        width: 50%;
+    }
+
+    section#sobre_mim > div > div.apresentacao > h1 {
+        font-size: 5em;
+        margin-bottom: 20px;
+    }
+
+    section#sobre_mim > div > div.apresentacao > p:first-child {
+        font-size: 2.2em;
+        margin-bottom: 0;
+        text-indent: 0;
+    }
+
+    section#sobre_mim > div > div.apresentacao > p {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        text-indent: 40px;
+        text-align: justify;
+    }
+
+    section#sobre_mim > div > div.container-redes-sociais {
+        width: 85%;
+        margin-top: 40px;
+    }
+
+    section#sobre_mim > div > div.container-redes-sociais > div.redes-sociais {
+        min-width: 203px;
+        max-width: 236px;
+    }
+
+    /* Section Projetos */
+    section#projetos {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    section#projetos > h1 {
+        font-size: 4em;
+        margin: 80px 0px 50px 0px;
+    }
+
+    section#projetos > div.projeto {
+        margin-bottom: 100px;
+    }
+
+    section#projetos > div.projeto > picture > img {
+        width: 80%;
+    }
+
+    section#projetos > div.projeto > h2 {
+        font-size: 2.8em;
+        margin: 30px 0px 0px 0px;
+    }
+
+    section#projetos > div.projeto > p {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    section#projetos > div.projeto > div {
+        width: 64%;
+    }
+
+    section#projetos > div.projeto > div > a {
+        font-size: 1.5em;
+        padding: 17px 35px 17px 35px
+    }
+
+    /* Section Contatos */
+    section#contatos {
+        margin: 250px auto 200px auto;
+        max-width: 70%;
+    }
+
+    section#contatos > h1 {
+        font-size: 5em;
+    }
+
+    section#contatos > div.container-redes-sociais > div.redes-sociais {
+        width: 250px;
+    }
+
+    section#contatos > div.container-redes-sociais > div.redes-sociais > a {
+        font-size: 1.9em;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 60px;
+    }
+
+    footer > p {
+        font-size: 1.7em;
     }
 }

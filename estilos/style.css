@@ -122,6 +122,8 @@ header > nav > ul > li > a {
     font-weight: bold;
     box-shadow: 4px 2px 3px 1px var(--azul-cinza);
     background-color: var(--azul);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .redes-sociais > img {
@@ -186,6 +188,8 @@ header > nav > ul > li > a {
     box-shadow: 4px 2px 3px 1px var(--azul-cinza);
     border: 2px solid var(--azul-cinza);
     background-color: var(--azul);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Contatos */
